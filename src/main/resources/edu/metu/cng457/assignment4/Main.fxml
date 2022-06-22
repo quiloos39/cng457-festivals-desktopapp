@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="210.0"
+      prefWidth="679.0" xmlns="http://javafx.com/javafx/11.0.3-internal"
+      fx:controller="edu.metu.cng457.assignment4.controller.MainController">
+    <children>
+        <Button layoutX="40.0" layoutY="156.0" mnemonicParsing="false" onAction="#onContinue" prefHeight="26.0"
+                prefWidth="84.0" style="-fx-background-color: green;" text="Continue" textFill="WHITE"/>
+        <VBox layoutX="40.0" layoutY="52.0" prefHeight="104.0" prefWidth="600.0" spacing="10.0">
+            <children>
+                <CheckBox fx:id="selectAddFestival" mnemonicParsing="false" text="Add festival run"/>
+                <CheckBox fx:id="selectAddConcert" mnemonicParsing="false" text="Add concert"/>
+                <CheckBox fx:id="selectAddStatistics" mnemonicParsing="false" text="Statistics"/>
+            </children>
+        </VBox>
+        <Label layoutX="40.0" layoutY="20.0" text="Select your option">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+    </children>
+</Pane>
