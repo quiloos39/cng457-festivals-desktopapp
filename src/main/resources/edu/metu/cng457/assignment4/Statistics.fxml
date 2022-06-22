@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="516.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/11.0.3-internal"
+      fx:controller="edu.metu.cng457.assignment4.controller.StatisticsController">
+    <children>
+        <ListView fx:id="popularFestivals" layoutX="74.0" layoutY="102.0" prefHeight="233.0" prefWidth="226.0"/>
+        <ListView fx:id="longestConcerts" layoutX="332.0" layoutY="102.0" prefHeight="233.0" prefWidth="226.0"/>
+        <CheckBox fx:id="checkPopularFestival" layoutX="74.0" layoutY="356.0" mnemonicParsing="false"
+                  text="Show popular festivals"/>
+        <CheckBox fx:id="checkLongestConcert" layoutX="332.0" layoutY="356.0" mnemonicParsing="false"
+                  text="Show longest concerts"/>
+        <Label layoutX="74.0" layoutY="74.0" text="Output">
+            <font>
+                <Font name="System Bold" size="13.0"/>
+            </font>
+        </Label>
+        <HBox layoutX="74.0" layoutY="418.0" prefHeight="26.0" prefWidth="197.0" spacing="10.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onShow" prefHeight="26.0" prefWidth="86.0"
+                        style="-fx-background-color: green;" text="Show" textFill="WHITE"/>
+                <Button mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="73.0"
+                        style="-fx-background-color: red;" text="Back" textFill="WHITE"/>
+            </children>
+        </HBox>
+        <Label layoutX="74.0" layoutY="47.0" text="Statistics">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+    </children>
+</Pane>
